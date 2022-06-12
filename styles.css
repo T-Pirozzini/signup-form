@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.main-container {
+  display: flex;
+  
+}
+.image {
+  max-width: 200px;
+}
+span {
+  color: red;
+}
