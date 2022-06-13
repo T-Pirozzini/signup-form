@@ -1,78 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@font-face {
+  font-family: norse;
+  src: url(/assets/Norse-Bold.otf)
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container {
-  display: flex;  
+  display: flex;
   height: 100vh;  
 }
 header, footer {
   background-color: rgb(12, 12, 12);
-  height: 20vh;
+  height: 10vh;
 }
 
 .image-container {
   width: 30vw;
+  min-width: 350px;
   display: flex;  
   flex-direction: column;
-  position: relative;  
+  position: relative;
+  background-image: url('/assets/lucas-calloch-unsplash.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;   
 }
 .image {
   width: 100%;
   height: 100%;  
 }
-.title {
+
+.title-container {
   position: absolute;
-  color: white;
-  font-size: 8rem; 
-  top: 40%;
-  text-align: center;  
-  background-color: rgba(10, 10, 10, 0.63);
+  top: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  background-color: rgba(10, 10, 10, 0.63);
+}
+.title {  
+  color: white;
+  font-size: 8rem;
+  font-family: norse, cursive;   
 }
 .logo {
   width: 6rem;
+  padding: 10px;
 }
 .credit {
   position: absolute;
   color: whitesmoke;
   left: 30%;
-  bottom: 10px;    
+  bottom: 20px;
+  font-size: .8rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 span {
   color: red;
 }
-
-.form-container {
-  width:70vw;   
+.signup-container {
+  min-width: 30%;
 }
 .intro {
-  padding: 60px 60px 30px 20px;
+  padding: 60px 60px 40px 40px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.075);
+  min-width:40%
 }
-.form {
-  padding: 10px 60px 20px;
+.intro > div {
+  font-weight: 700;
+}
+.intro-text {
+  max-width: 50%;
+}
+.form-container {
+  width:70vw;     
+  padding: 10px 40px 20px;
   box-shadow: 0px 4px 10px 1px rgba(128, 128, 128, 0.527); 
 }
+.form-container > div {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  width: 50%;   
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 10px 10px 10px 0px;
+}
+.form > div > label {
+  font-size: .7rem;
+  font-weight: 600;
+}
 input {
-  margin: 10px;
+  padding: 5px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+input:focus {
+  border:1px solid #cc0066b9;
 }
 
 .create-account {
   background-color: #cc0066b9;
-  padding: 10px 30px;
+  padding: 15px 50px;
   margin: 30px;
+  font-size: 1rem;
   color: white;
-  border-radius: 4px;
-  border: none;
+  border-radius: 8px;
+  border: none;  
+  transition: background-color 0.5s ease;
+}
+.create-account:hover {
+  background-color: #cc00668f;
+  cursor: pointer;  
 }
 .login {
   margin: 0px 30px;
+  transition: color 0.5s ease;
 }
 .highlight {
   color: #cc0066b9;
   font-weight: 700;
 }
+.highlight:hover {
+  color: #cc00668f;
+  cursor: pointer;
+}
+
 
