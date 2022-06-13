@@ -12,13 +12,8 @@
 
 .main-container {
   display: flex;
-  height: 80vh;    
+  height: 100vh;    
 }
-header, footer {
-  background-color: rgb(12, 12, 12);
-  height: 10vh;
-}
-
 .image-container {
   width: 30vw;
   min-width: 350px;
@@ -36,7 +31,7 @@ header, footer {
 
 .title-container {
   position: absolute;
-  top: 35%;
+  top: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +62,7 @@ span {
   min-width: 30%;
 }
 .intro {
-  padding: 60px 60px 40px 40px;
+  padding: 200px 60px 40px 40px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.075);
   min-width:40%
@@ -76,7 +71,7 @@ span {
   font-weight: 700;
 }
 .intro-text {
-  max-width: 50%;
+  max-width: 45%;
 }
 .form-container {
   width:70vw;     
